@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import GlobalStyle from "@src/style/global.style";
+import GlobalStyle from "src/style/global.style";
 import Main from "src/components/Main/Main";
 
 const Router = () => {
