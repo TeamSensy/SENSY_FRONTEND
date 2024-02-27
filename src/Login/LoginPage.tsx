@@ -1,53 +1,73 @@
-import React from "react";
+// LoginPage.tsx
+import React, { useState } from "react";
+import "./LoginPage.css";
 
 const LoginPage: React.FC = () => {
+  const [id, setId] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleLogin = () => {
+    if (id === "example" && password === "password") {
+      // 로그인 성공
+      alert("로그인 성공!");
+    } else {
+      // 로그인 실패
+      setErrorMessage("아이디 또는 비밀번호가 올바르지 않습니다.");
+    }
+  };
+
+  const handleForgotPassword = () => {
+    alert("비밀번호를 재설정합니다.");
+  };
+
+  const handleSignUp = () => {
+    alert("회원가입 페이지로 이동합니다.");
+  };
+
   return (
     <div className="login-page">
-      <div className="group-154">
-        <div className="circle-logo-4"></div>
-        <div className="sensy">SENSY</div>
+      <div className="logo-container">
+        <div className="circle-logo"></div>
+        <div className="brand-name">SENSY</div>
       </div>
 
-      <div className="frame-427318937">
-        <div className="frame-427318940">
-          <div className="frame-427318934">
-            <div className="frame-427318931">
-              <div className="frame-14">
-                <div className="group-3"></div>
-                <input className="id" type="text" placeholder="ID" />
-              </div>
-
-              <div className="frame-15">
-                <div className="group-7"></div>
-                <input
-                  className="password"
-                  type="password"
-                  placeholder="Password"
-                />
-              </div>
-            </div>
-          </div>
+      <div className="input-container">
+        <div className="input-group">
+          <input
+            className="input-field"
+            type="text"
+            placeholder="ID"
+            value={id}
+            onChange={(e) => setId(e.target.value)}
+          />
+          <input
+            className="input-field"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </div>
-      </div>
 
-      <button className="btn">Login</button>
+        <button className="login-button" onClick={handleLogin}>
+          Login
+        </button>
 
-      <div className="frame-427318939">
-        <div className="find-id">Find ID (email)</div>
-        <div className="line-4"></div>
-        <div className="find-password">Find a password</div>
-        <div className="line-3"></div>
-        <div className="sign-up">Sign up</div>
-      </div>
+        <div className="error-message">{errorMessage}</div>
 
-      <div className="frame-427318941">
-        <div className="google-login">
-          <div className="icon-google"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="sign-in-google">Sign in with Google</div>
+        <div className="links-container">
+          <div className="link" onClick={handleForgotPassword}>
+            Forgot ID (email)
+          </div>
+          <div className="divider"></div>
+          <div className="link" onClick={handleForgotPassword}>
+            Forgot Password
+          </div>
+          <div className="divider"></div>
+          <div className="link" onClick={handleSignUp}>
+            Sign up
+          </div>
         </div>
       </div>
     </div>
