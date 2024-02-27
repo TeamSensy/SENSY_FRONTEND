@@ -20,16 +20,7 @@
 
 .PopularCoursesWrap {
   width: 100%;
-  height: 750px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.PopularCoursesLine {
-  width: 99%;
-  height: 630px;
+  height: 650px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -39,10 +30,11 @@
 
 .PopularCourses {
   width: 80%;
-  height: 612px;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .PopularCoursesTop {
@@ -117,11 +109,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .PopularCoursesLeftIcon {
   position: absolute;
-  top: 99%;
   left: calc(15% + 10px);
   cursor: pointer;
 }
@@ -201,7 +193,6 @@
 
 .PopularCoursesRightIcon {
   position: absolute;
-  top: 99%;
   left: 80%;
   cursor: pointer;
 }
