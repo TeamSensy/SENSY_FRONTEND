@@ -1,6 +1,6 @@
 // LoginPage.tsx
 import React, { useState } from "react";
-import "./LoginPage.css";
+import "./Login.css";
 
 const LoginPage: React.FC = () => {
   const [id, setId] = useState("");
@@ -15,6 +15,10 @@ const LoginPage: React.FC = () => {
       // 로그인 실패
       setErrorMessage("아이디 또는 비밀번호가 올바르지 않습니다.");
     }
+  };
+
+  const handleForgotId = () => {
+    alert("아이디(이메일)을 찾습니다.");
   };
 
   const handleForgotPassword = () => {
@@ -57,12 +61,12 @@ const LoginPage: React.FC = () => {
         <div className="error-message">{errorMessage}</div>
 
         <div className="links-container">
-          <div className="link" onClick={handleForgotPassword}>
-            Forgot ID (email)
+          <div className="link" onClick={handleForgotId}>
+            Find ID (email)
           </div>
           <div className="divider"></div>
           <div className="link" onClick={handleForgotPassword}>
-            Forgot Password
+            Find a Password
           </div>
           <div className="divider"></div>
           <div className="link" onClick={handleSignUp}>
