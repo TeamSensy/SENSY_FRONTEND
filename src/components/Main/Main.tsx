@@ -4,6 +4,8 @@ import CardDummyImage from "src/assets/img/image container.png";
 import LeftIcon from "src/assets/img/Left_Icon.png";
 import RightIcon from "src/assets/img/Right_Icon.png";
 import LikeIcon from "src/assets/img/LikeIcon.png";
+import ExampleProfile from "src/assets/img/Ex_Profile.png";
+import ExampleRate from "src/assets/img/Ex_Rate.png";
 
 const Main = () => {
   return (
@@ -98,6 +100,81 @@ const Main = () => {
                 className="PopularCoursesRightIcon"
                 src={RightIcon}
                 alt="오른쪽 아이콘"></img>
+            </div>
+          </div>
+        </div>
+        <div className="StudentReviewsWrap">
+          <div className="StudentReviewsBox">
+            <div className="StudentReviews">
+              <div className="StudentReviewsTitle">Student Reviews</div>
+              {/* Reviews_Dummy */}
+              <div className="StudentReviewsCard">
+                <div className="StudentReviewsCardInfoWrap">
+                  <div className="StudentReviewsCardInfoLeft">
+                    <img
+                      className="StudentReviewsCardProfile"
+                      src={ExampleProfile}
+                      alt="프로필"></img>
+                    <p className="StudentReviewsCardName">John Doe</p>
+                  </div>
+                  <div className="StudentReviewsCardInfoRight">
+                    <img
+                      className="StudentReviewsCardRate"
+                      src={ExampleRate}
+                      alt="별점"></img>
+                  </div>
+                </div>
+                <div className="StudentReviewsCardContentWrap">
+                  <p className="StudentReviewsCardContent">
+                    Great platform for learning
+                  </p>
+                </div>
+              </div>
+              <div className="StudentReviewsCard">
+                <div className="StudentReviewsCardInfoWrap">
+                  <div className="StudentReviewsCardInfoLeft">
+                    <img
+                      className="StudentReviewsCardProfile"
+                      src={ExampleProfile}
+                      alt="프로필"></img>
+                    <p className="StudentReviewsCardName">John Doe</p>
+                  </div>
+                  <div className="StudentReviewsCardInfoRight">
+                    <img
+                      className="StudentReviewsCardRate"
+                      src={ExampleRate}
+                      alt="별점"></img>
+                  </div>
+                </div>
+                <div className="StudentReviewsCardContentWrap">
+                  <p className="StudentReviewsCardContent">
+                    Great platform for learning
+                  </p>
+                </div>
+              </div>
+              <div className="StudentReviewsCard">
+                <div className="StudentReviewsCardInfoWrap">
+                  <div className="StudentReviewsCardInfoLeft">
+                    <img
+                      className="StudentReviewsCardProfile"
+                      src={ExampleProfile}
+                      alt="프로필"></img>
+                    <p className="StudentReviewsCardName">John Doe</p>
+                  </div>
+                  <div className="StudentReviewsCardInfoRight">
+                    <img
+                      className="StudentReviewsCardRate"
+                      src={ExampleRate}
+                      alt="별점"></img>
+                  </div>
+                </div>
+                <div className="StudentReviewsCardContentWrap">
+                  <p className="StudentReviewsCardContent">
+                    Great platform for learning
+                  </p>
+                </div>
+              </div>
+              {/* Reviews_Dummy */}
             </div>
           </div>
         </div>
