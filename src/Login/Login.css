@@ -1,0 +1,185 @@
+/* Group 154 */
+.group-154 {
+  position: absolute;
+  width: 311px;
+  height: 596px;
+  left: 1374px;
+  top: 216px;
+}
+
+/* circle logo 4 */
+.circle-logo-4 {
+  position: absolute;
+  width: 181px;
+  height: 181px;
+  left: 1433px;
+  top: 216px;
+  background: url(../img/SENSY_logo.JPG);
+}
+
+/* SENSY */
+.sensy {
+  position: absolute;
+  width: 234px;
+  height: 84px;
+  left: 1411px;
+  top: 393px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 84px;
+  color: #1c3879;
+}
+
+/* Frame 427318937 */
+.frame-427318937 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 9px;
+  position: absolute;
+  width: 311px;
+  height: 282px;
+  left: 1374px;
+  top: 530px;
+}
+
+/* Frame 427318940 */
+.frame-427318940 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 18px;
+  width: 311px;
+  height: 213px;
+}
+
+/* Frame 427318934 */
+.frame-427318934 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 311px;
+  height: 178px;
+}
+
+/* Frame 427318931 */
+.frame-427318931 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 311px;
+  height: 112px;
+}
+
+/* Frame 14 */
+.frame-14 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 256px 18px 18px;
+  gap: 8px;
+  width: 311px;
+  height: 52px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+}
+
+/* Group 3 */
+.group-3 {
+  width: 16px;
+  height: 16px;
+}
+
+/* Ellipse 5 */
+.ellipse-5 {
+  box-sizing: border-box;
+  position: absolute;
+  left: 7.07%;
+  right: 90.35%;
+  top: 34.62%;
+  bottom: 50%;
+  border: 1px solid #c6c6c6;
+}
+
+/* Rectangle 8 */
+.rectangle-8 {
+  box-sizing: border-box;
+  position: absolute;
+  left: 5.79%;
+  right: 89.07%;
+  top: 53.85%;
+  bottom: 34.62%;
+  border: 1px solid #c6c6c6;
+}
+
+/* ID */
+.id {
+  width: 13px;
+  height: 16px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #848484;
+}
+
+/* Frame 15 */
+.frame-15 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 212px 18px 20.5px;
+  gap: 10.5px;
+  width: 311px;
+  height: 52px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+}
+
+/* Group 7 */
+.group-7 {
+  width: 11px;
+  height: 15px;
+}
+
+/* Group 6 */
+.group-6 {
+  position: absolute;
+  left: 6.59%;
+  right: 89.87%;
+  top: 35.58%;
+  bottom: 35.58%;
+}
+
+/* Rectangle 10 */
+.rectangle-10 {
+  box-sizing: border-box;
+  position: absolute;
+  left: 7.88%;
+  right: 91.16%;
+  top: 35.58%;
+  bottom: 49.04%;
+  border: 1px solid #c6c6c6;
+  border-radius: 2px;
+}
+
+/* Ellipse 6 */
+.ellipse-6 {
+  box-sizing: border-box;
+  position: absolute;
+  left: 6.59%;
+  right: 89.87%;
+}
