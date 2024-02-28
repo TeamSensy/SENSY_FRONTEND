@@ -1,11 +1,12 @@
-// LoginPage.tsx
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./Login.css";
 
 const LoginPage: React.FC = () => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const history = useHistory(); // useHistory 훅을 사용하여 history 객체를 가져옵니다.
 
   const handleLogin = () => {
     if (id === "example" && password === "password") {
@@ -26,7 +27,8 @@ const LoginPage: React.FC = () => {
   };
 
   const handleSignUp = () => {
-    alert("회원가입 페이지로 이동합니다.");
+    // 회원가입 페이지로 이동합니다.
+    history.push("/SignUp/SignUpPage"); // 해당 경로로 이동합니다.
   };
 
   return (
