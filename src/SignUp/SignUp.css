@@ -7,15 +7,6 @@
   background: #ffffff;
 }
 
-
-.logo-group {
-  position: absolute;
-  width: 311.1px;
-  height: 1010px;
-  left: 218px;
-  top: 95px;
-}
-
 .circle-logo {
   position: absolute;
   width: 181px;
@@ -26,27 +17,19 @@
 }
 
 /* 로고 텍스트 */
-.logo-text {
+.logo-text,
+h3 {
   position: absolute;
-  width: 234px;
+  width: 170px;
   height: 84px;
-  left: 261px;
-  top: 272px;
+  top: 110px;
+  left: 160px;
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 900;
-  font-size: 70px;
+  font-size: 55px;
   line-height: 84px;
   color: #1c3879;
-}
-
-/* 회원가입 양식 그룹 */
-.form-group {
-  position: absolute;
-  width: 311.1px;
-  height: 696px;
-  left: 218px;
-  top: 409px;
 }
 
 /* 프로필 이미지 */

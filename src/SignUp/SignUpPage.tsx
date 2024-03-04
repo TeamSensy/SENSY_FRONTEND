@@ -9,9 +9,7 @@ const SignUpPage: React.FC = () => {
   const [name, setName] = useState<string>("");
   const [nationality, setNationality] = useState<string>("");
 
-  const handleSignUp = () => {
-    // 회원가입 처리 로직 작성
-  };
+  const handleSignUp = () => {};
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -24,41 +22,48 @@ const SignUpPage: React.FC = () => {
   return (
     <div className="signup-page">
       <div className="logo-group">
+        <h3 className="logo"> SENSY </h3>
         <div className="circle-logo"></div>
       </div>
 
       <div className="form-group">
         <input
+          className="id"
           type="text"
           value={id}
           onChange={(e) => handleChange(e, setId)}
           placeholder="ID"
         />
         <input
+          className="password"
           type="password"
           value={password}
           onChange={(e) => handleChange(e, setPassword)}
           placeholder="Password"
         />
         <input
+          className="Verify"
           type="password"
           value={verifyPassword}
           onChange={(e) => handleChange(e, setVerifyPassword)}
           placeholder="Verify Password"
         />
         <input
+          className="Birthday"
           type="text"
           value={birthday}
           onChange={(e) => handleChange(e, setBirthday)}
           placeholder="Birthday"
         />
         <input
+          className="Name"
           type="text"
           value={name}
           onChange={(e) => handleChange(e, setName)}
           placeholder="Name"
         />
         <input
+          className="Nationality"
           type="text"
           value={nationality}
           onChange={(e) => handleChange(e, setNationality)}

@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import "./Login.css";
 
 const LoginPage: React.FC = () => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const history = useHistory(); // useHistory 훅을 사용하여 history 객체를 가져옵니다.
+  // const history = useHistory();
 
   const handleLogin = () => {
+    // const validId = /^[a-zA-Z0-9_]+$/.test(id)
+
     if (id === "example" && password === "password") {
       // 로그인 성공
       alert("로그인 성공!");
@@ -26,10 +28,10 @@ const LoginPage: React.FC = () => {
     alert("비밀번호를 재설정합니다.");
   };
 
-  const handleSignUp = () => {
-    // 회원가입 페이지로 이동합니다.
-    history.push("/SignUp/SignUpPage"); // 해당 경로로 이동합니다.
-  };
+  // const handleSignUp = () => {
+  //   // 회원가입 페이지로 이동합니다.
+  //   history.push("/SignUp/SignUpPage"); // 해당 경로로 이동합니다.
+  // };
 
   return (
     <div className="login-page">
@@ -71,9 +73,9 @@ const LoginPage: React.FC = () => {
             Find a Password
           </div>
           <div className="divider"></div>
-          <div className="link" onClick={handleSignUp}>
+          {/* <div className="link" onClick={handleSignUp}>
             Sign up
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
