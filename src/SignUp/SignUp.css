@@ -1,20 +1,20 @@
 /* sign up page */
 
-.signup-page {
+/* .signup-page {
   position: relative;
   width: 1920px;
   height: 1200px;
   background: #ffffff;
-}
+} */
 
-.circle-logo {
+/* .circle-logo {
   position: absolute;
   width: 181px;
   height: 181px;
   left: 283px;
   top: 95px;
   background: url(../img/SENSY_logo.JPG);
-}
+} */
 
 /* 로고 텍스트 */
 .logo-text,
@@ -48,14 +48,14 @@ h3 {
 }
 
 /* SENSY 홍보자료 */
-.sensy-promotion {
+/* .sensy-promotion {
   position: absolute;
   width: 1139px;
   height: 1200px;
   left: 781px;
   top: 0px;
   background: url(../img/SENSY_홍보자료.JPG);
-}
+} */
 
 /* 로그인 버튼 */
 .login-button {
