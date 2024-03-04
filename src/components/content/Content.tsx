@@ -1,16 +1,23 @@
 import React, { useState } from "react";
-import ReactMarkdown from 'react-markdown'
-import { dummy } from "./data"
+import ReactMarkdown from 'react-markdown';
+import dummyData from "./data";
+import * as S from "../../style/Content.style";
 
-const Content = () => {
+const Content: React.FC = () => {
   const markdown = `Just a link: www.nasa.gov.`;
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-  const [previewImg, setPreviewImg] = useState("");
-  const [contentImg, setContentImg] = useState("");
+  const [data, setData] = useState(dummyData);
+
     return (
       <div>
-        <ReactMarkdown children={markdown} />
+        {/* <ReactMarkdown children={markdown} /> */}
+        {data.map((item, index) => (
+          <div key={index}>
+            <p>{item.title}</p>
+            <p>{item.content}</p>
+            <p>{item.previewImg}</p>
+            <p>{item.contentImg}</p>
+          </div>
+        ))}
         
       </div>
     );

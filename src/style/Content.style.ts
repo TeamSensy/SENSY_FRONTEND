@@ -1,6 +1,6 @@
-import { createContentStyle } from "styled-components";
+import styled from "styled-components";
 
-const ContentStyle = createContentStyle`
+const ContentStyle = styled.div`
 * {
   backgrount-color: red;
 }
