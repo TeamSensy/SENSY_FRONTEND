@@ -9,7 +9,7 @@ const LoginPage: React.FC = () => {
   // const history = useHistory();
 
   const handleLogin = () => {
-    // const validId = /^[a-zA-Z0-9_]+$/.test(id)
+    // const validId = /^[a-zA-Z0-9_]+$/.test(id);
 
     if (id === "example" && password === "password") {
       // 로그인 성공
@@ -28,10 +28,10 @@ const LoginPage: React.FC = () => {
     alert("비밀번호를 재설정합니다.");
   };
 
-  // const handleSignUp = () => {
-  //   // 회원가입 페이지로 이동합니다.
-  //   history.push("/SignUp/SignUpPage"); // 해당 경로로 이동합니다.
-  // };
+  const handleSignUp = () => {
+    // 회원가입 페이지로
+    // history.push("/SignUp/SignUpPage"); 
+  };
 
   return (
     <div className="login-page">
@@ -73,9 +73,9 @@ const LoginPage: React.FC = () => {
             Find a Password
           </div>
           <div className="divider"></div>
-          {/* <div className="link" onClick={handleSignUp}>
+          <div className="link" onClick={handleSignUp}>
             Sign up
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
