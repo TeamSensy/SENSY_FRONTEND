@@ -1,4 +1,5 @@
 import "src/style/Main.style/Main.style.css";
+import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import MainImage from "src/assets/img/Main_Image.png";
 import CardDummyImage from "src/assets/img/image container.png";
 import LeftIcon from "src/assets/img/Left_Icon.png";
@@ -6,8 +7,19 @@ import RightIcon from "src/assets/img/Right_Icon.png";
 import LikeIcon from "src/assets/img/LikeIcon.png";
 import ExampleProfile from "src/assets/img/Ex_Profile.png";
 import ExampleRate from "src/assets/img/Ex_Rate.png";
+import ExampleVanner from "src/assets/img/Ex_Vanner.png";
+import "@splidejs/react-splide/css";
 
 const Main = () => {
+  const option = {
+    type: "loop",
+    width: "70vw",
+    height: 300,
+    perPage: 1,
+    interval: 5000,
+    autoplay: true,
+    pauseOnHover: false,
+  };
   return (
     <div className="MainPage">
       <div className="Main">
@@ -177,6 +189,46 @@ const Main = () => {
               {/* Reviews_Dummy */}
             </div>
           </div>
+        </div>
+        <div className="VannerWrap">
+          <Splide options={option} hasTrack={false}>
+            <SplideTrack>
+              <SplideSlide>
+                <img
+                  className="VannerImage"
+                  src={ExampleVanner}
+                  alt="배너 이미지 1"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  className="VannerImage"
+                  src={ExampleVanner}
+                  alt="배너 이미지 2"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  className="VannerImage"
+                  src={ExampleVanner}
+                  alt="배너 이미지 3"
+                />
+              </SplideSlide>
+            </SplideTrack>
+
+            <div className="splide__progress">
+              <div className="splide__progress__bar" />
+            </div>
+
+            <div className="splide__arrows">
+              <button
+                className="splide__arrow splide__arrow--prev"
+                style={{ display: "none" }}></button>
+              <button
+                className="splide__arrow splide__arrow--next"
+                style={{ display: "none" }}></button>
+            </div>
+          </Splide>
         </div>
       </div>
     </div>
