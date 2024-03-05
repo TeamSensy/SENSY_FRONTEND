@@ -6,6 +6,7 @@ const CategoryPage: React.FC = () => {
     <div className="category-page">
       <div className="card">
         <div className="image-container">
+            {/* 상단의 이미지 넣을 자리 */}
           <div className="image"></div>
           <div className="tag">
             <span className="text">Tag</span>
