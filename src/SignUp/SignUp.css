@@ -1,20 +1,19 @@
 /* sign up page */
 
-/* .signup-page {
+.signup-page {
   position: relative;
   width: 1920px;
   height: 1200px;
-  background: #ffffff;
-} */
+  /* background: #ffffff; */
+}
 
-/* .circle-logo {
-  position: absolute;
-  width: 181px;
+.circle-logo {
+  /* width: 181px;
   height: 181px;
   left: 283px;
-  top: 95px;
+  top: 95px; */
   background: url(../img/SENSY_logo.JPG);
-} */
+}
 
 /* 로고 텍스트 */
 .logo-text,
@@ -27,7 +26,7 @@ h3 {
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 900;
-  font-size: 55px;
+  font-size: 65px;
   line-height: 84px;
   color: #1c3879;
 }
@@ -57,17 +56,17 @@ h3 {
   background: url(../img/SENSY_홍보자료.JPG);
 } */
 
-/* 로그인 버튼 */
-.login-button {
-  position: absolute;
-  left: 38.59%;
-  right: 38.59%;
-  top: 26%;
-  bottom: 26%;
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+.form-group {
+  width: 250px;
+}
+
+.signup-button {
+  width: 225px;
+  height: 50px;
+  background-color: #1c3879;
   color: #ffffff;
+  font-size: large;
+  font-weight: 550;
+  border-radius: 6px;
+  top: 1000px;
 }
