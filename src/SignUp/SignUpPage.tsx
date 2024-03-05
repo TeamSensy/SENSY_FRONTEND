@@ -26,7 +26,7 @@ const SignUpPage: React.FC = () => {
         <div className="circle-logo"></div>
       </div>
 
-      <div className="form-group">
+      <div className="input-field">
         <input
           className="id"
           type="text"
