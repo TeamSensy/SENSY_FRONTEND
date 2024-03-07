@@ -190,26 +190,26 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="VannerWrap">
+        <div className="BannerWrap">
           <Splide options={option} hasTrack={false}>
             <SplideTrack>
               <SplideSlide>
                 <img
-                  className="VannerImage"
+                  className="BannerImage"
                   src={ExampleVanner}
                   alt="배너 이미지 1"
                 />
               </SplideSlide>
               <SplideSlide>
                 <img
-                  className="VannerImage"
+                  className="BannerImage"
                   src={ExampleVanner}
                   alt="배너 이미지 2"
                 />
               </SplideSlide>
               <SplideSlide>
                 <img
-                  className="VannerImage"
+                  className="BannerImage"
                   src={ExampleVanner}
                   alt="배너 이미지 3"
                 />
