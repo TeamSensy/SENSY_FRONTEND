@@ -8,7 +8,7 @@ const Content: React.FC = () => {
   const [data, setData] = useState(dummyData);
 
     return (
-      <div>
+      <S.ContentStyle>
         {/* <ReactMarkdown children={markdown} /> */}
         {data.map((item, index) => (
           <div key={index}>
@@ -19,7 +19,7 @@ const Content: React.FC = () => {
           </div>
         ))}
         
-      </div>
+      </S.ContentStyle>
     );
   };
   
