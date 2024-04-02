@@ -1,7 +1,11 @@
+import Content from "../content/Content";
+
 const Main = () => {
   return (
     <div>
-      <div></div>
+      <Content />
+      <div>
+      </div>
     </div>
   );
 };
