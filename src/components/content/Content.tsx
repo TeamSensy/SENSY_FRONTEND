@@ -17,6 +17,7 @@ const Content: React.FC = () => {
           {/* <ReactMarkdown children={markdown} /> */}
           <div key={dummyData[0].idx}>
             <p>{dummyData[0].title}</p>
+            <p>{dummyData[0].user} | {dummyData[0].date}</p>
             <p>{dummyData[0].content}</p>
             <S.ImgStyle src={dummyData[0].previewImg} />
             <p>{dummyData[0].content2}</p>
