@@ -1,4 +1,5 @@
 import "src/style/Main.style/Main.style.css";
+import Topbar from "src/components/Topbar/Topbar";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import MainImage from "src/assets/img/Main_Image.png";
 import CardDummyImage from "src/assets/img/image container.png";
@@ -23,6 +24,7 @@ const Main = () => {
   };
   return (
     <div className="MainPage">
+      <Topbar />
       <div className="Main">
         <img className="MainImage" src={MainImage} alt="메인 이미지"></img>
         <div className="PopularCoursesWrap">
@@ -53,7 +55,9 @@ const Main = () => {
                     alt="카드 이미지"></img>
                   <div className="PopularCoursesCardInfo">
                     <div className="PopularCoursesCardTitleWrap">
-                      <span className="PopularCoursesCardTitle">{data.title}</span>
+                      <span className="PopularCoursesCardTitle">
+                        {data.title}
+                      </span>
                     </div>
                     <div className="PopularCoursesCardContentWrap">
                       <p className="PopularCoursesCardContent">
