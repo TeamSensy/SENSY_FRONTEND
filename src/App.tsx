@@ -1,8 +1,13 @@
-import Router from "src/components/router";
+import React from "react";
+// import SignUpPage from "./SignUp/SignUpPage";
+import LoginPage from "./Login/LoginPage";
 
 function App() {
   return (
-      <Router />
+    <div>
+      {/* <SignUpPage /> */}
+      <LoginPage />
+    </div>
   );
 }
 

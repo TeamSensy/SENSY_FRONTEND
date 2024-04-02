@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import MDEditor from '@uiw/react-md-editor';
 import { dummyData } from "./data";
 import * as S from "../../style/Content.style";
+import HeartImg from "../content/img/heart.svg";
+import NextImg from "../content/img/next.svg";
+import BeforeImg from "../content/img/before.svg"
 
 const Content: React.FC = () => {
   const markdown = `Just a link: www.nasa.gov.`;
@@ -14,7 +17,6 @@ const Content: React.FC = () => {
     return (
       <S.All>
         <S.ContentStyle>
-          {/* <ReactMarkdown children={markdown} /> */}
           <div key={dummyData[0].idx}>
             <p>{dummyData[0].title}</p>
             <p>{dummyData[0].user} | {dummyData[0].date}</p>

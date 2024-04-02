@@ -1,0 +1,145 @@
+.image-container,
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  width: 334px;
+  height: 240px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.image {
+  width: 334px;
+  height: 240px;
+  background: rgba(217, 217, 217, 0.5);
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+
+  background: url();
+}
+
+.title {
+  position: absolute;
+  height: 16px;
+  left: 16px;
+  right: 16px;
+  top: calc(50% - 16px / 2);
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  position: absolute;
+  width: 41px;
+  height: 24px;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px 0;
+}
+
+.text {
+  width: 25px;
+  height: 16px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  gap: 4px;
+  isolation: isolate;
+  width: 334px;
+  height: 80px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.subtitle {
+  width: 310px;
+  height: 28px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.like {
+  position: absolute;
+  width: 30px;
+  height: 19px;
+  left: 292px;
+  top: 44px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.vector {
+  position: absolute;
+  width: 18px;
+  height: 15px;
+  left: 269px;
+  top: 46px;
+  border: 1.5px solid #000000;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 334px;
+  height: 412px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
