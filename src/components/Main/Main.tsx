@@ -53,9 +53,7 @@ const Main = () => {
                     alt="카드 이미지"></img>
                   <div className="PopularCoursesCardInfo">
                     <div className="PopularCoursesCardTitleWrap">
-                      <span className="PopularCoursesCardTitle">
-                        {data.title}
-                      </span>
+                      <span className="PopularCoursesCardTitle">{data.title}</span>
                     </div>
                     <div className="PopularCoursesCardContentWrap">
                       <p className="PopularCoursesCardContent">
