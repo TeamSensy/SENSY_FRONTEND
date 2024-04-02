@@ -9,6 +9,7 @@ import ExampleProfile from "src/assets/img/Ex_Profile.png";
 import ExampleRate from "src/assets/img/Ex_Rate.png";
 import ExampleVanner from "src/assets/img/Ex_Vanner.png";
 import "@splidejs/react-splide/css";
+import { CardDummy, ReviewsDummy } from "src/components/Main/MainDummy";
 
 const Main = () => {
   const option = {
@@ -39,79 +40,43 @@ const Main = () => {
               </div>
             </div>
             <div className="PopularCoursesBottom">
-              <img
-                className="PopularCoursesLeftIcon"
-                src={LeftIcon}
-                alt="왼쪽 아이콘"></img>
+              {/* <img
+                    className="PopularCoursesLeftIcon"
+                    src={LeftIcon}
+                    alt="왼쪽 아이콘"></img> */}
               {/* Card_Dummy */}
-              <div className="PopularCoursesCard">
-                <img
-                  className="PopularCoursesCardImage"
-                  src={CardDummyImage}
-                  alt="카드 이미지"></img>
-                <div className="PopularCoursesCardInfo">
-                  <div className="PopularCoursesCardTitleWrap">
-                    <span className="PopularCoursesCardTitle">Product 1</span>
-                  </div>
-                  <div className="PopularCoursesCardContentWrap">
-                    <p className="PopularCoursesCardContent">Product 1 data</p>
-                    <div className="PopularCoursesCardLikeWrap">
-                      <img
-                        className="PopularCoursesCardLikeIcon"
-                        src={LikeIcon}
-                        alt="좋아요 아이콘"></img>
-                      <p className="PopularCoursesCardLike">Like</p>
+              {CardDummy.map((data) => (
+                <div className="PopularCoursesCard" key={data.id}>
+                  <img
+                    className="PopularCoursesCardImage"
+                    src={CardDummyImage}
+                    alt="카드 이미지"></img>
+                  <div className="PopularCoursesCardInfo">
+                    <div className="PopularCoursesCardTitleWrap">
+                      <span className="PopularCoursesCardTitle">
+                        {data.title}
+                      </span>
+                    </div>
+                    <div className="PopularCoursesCardContentWrap">
+                      <p className="PopularCoursesCardContent">
+                        {data.content}
+                      </p>
+                      <div className="PopularCoursesCardLikeWrap">
+                        <img
+                          className="PopularCoursesCardLikeIcon"
+                          src={LikeIcon}
+                          alt="좋아요 아이콘"></img>
+                        <p className="PopularCoursesCardLike">Like</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="PopularCoursesCard">
-                <img
-                  className="PopularCoursesCardImage"
-                  src={CardDummyImage}
-                  alt="카드 이미지"></img>
-                <div className="PopularCoursesCardInfo">
-                  <div className="PopularCoursesCardTitleWrap">
-                    <span className="PopularCoursesCardTitle">Product 1</span>
-                  </div>
-                  <div className="PopularCoursesCardContentWrap">
-                    <p className="PopularCoursesCardContent">Product 1 data</p>
-                    <div className="PopularCoursesCardLikeWrap">
-                      <img
-                        className="PopularCoursesCardLikeIcon"
-                        src={LikeIcon}
-                        alt="좋아요 아이콘"></img>
-                      <p className="PopularCoursesCardLike">Like</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="PopularCoursesCard">
-                <img
-                  className="PopularCoursesCardImage"
-                  src={CardDummyImage}
-                  alt="카드 이미지"></img>
-                <div className="PopularCoursesCardInfo">
-                  <div className="PopularCoursesCardTitleWrap">
-                    <span className="PopularCoursesCardTitle">Product 1</span>
-                  </div>
-                  <div className="PopularCoursesCardContentWrap">
-                    <p className="PopularCoursesCardContent">Product 1 data</p>
-                    <div className="PopularCoursesCardLikeWrap">
-                      <img
-                        className="PopularCoursesCardLikeIcon"
-                        src={LikeIcon}
-                        alt="좋아요 아이콘"></img>
-                      <p className="PopularCoursesCardLike">Like</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
               {/* Card_Dummy */}
-              <img
-                className="PopularCoursesRightIcon"
-                src={RightIcon}
-                alt="오른쪽 아이콘"></img>
+              {/* <img
+                    className="PopularCoursesRightIcon"
+                    src={RightIcon}
+                    alt="오른쪽 아이콘"></img> */}
             </div>
           </div>
         </div>
@@ -120,72 +85,28 @@ const Main = () => {
             <div className="StudentReviews">
               <div className="StudentReviewsTitle">Student Reviews</div>
               {/* Reviews_Dummy */}
-              <div className="StudentReviewsCard">
-                <div className="StudentReviewsCardInfoWrap">
-                  <div className="StudentReviewsCardInfoLeft">
-                    <img
-                      className="StudentReviewsCardProfile"
-                      src={ExampleProfile}
-                      alt="프로필"></img>
-                    <p className="StudentReviewsCardName">John Doe</p>
+              {ReviewsDummy.map((data) => (
+                <div className="StudentReviewsCard" key={data.id}>
+                  <div className="StudentReviewsCardInfoWrap">
+                    <div className="StudentReviewsCardInfoLeft">
+                      <img
+                        className="StudentReviewsCardProfile"
+                        src={ExampleProfile}
+                        alt="프로필"></img>
+                      <p className="StudentReviewsCardName">{data.name}</p>
+                    </div>
+                    <div className="StudentReviewsCardInfoRight">
+                      <img
+                        className="StudentReviewsCardRate"
+                        src={ExampleRate}
+                        alt="별점"></img>
+                    </div>
                   </div>
-                  <div className="StudentReviewsCardInfoRight">
-                    <img
-                      className="StudentReviewsCardRate"
-                      src={ExampleRate}
-                      alt="별점"></img>
-                  </div>
-                </div>
-                <div className="StudentReviewsCardContentWrap">
-                  <p className="StudentReviewsCardContent">
-                    Great platform for learning
-                  </p>
-                </div>
-              </div>
-              <div className="StudentReviewsCard">
-                <div className="StudentReviewsCardInfoWrap">
-                  <div className="StudentReviewsCardInfoLeft">
-                    <img
-                      className="StudentReviewsCardProfile"
-                      src={ExampleProfile}
-                      alt="프로필"></img>
-                    <p className="StudentReviewsCardName">John Doe</p>
-                  </div>
-                  <div className="StudentReviewsCardInfoRight">
-                    <img
-                      className="StudentReviewsCardRate"
-                      src={ExampleRate}
-                      alt="별점"></img>
+                  <div className="StudentReviewsCardContentWrap">
+                    <p className="StudentReviewsCardContent">{data.content}</p>
                   </div>
                 </div>
-                <div className="StudentReviewsCardContentWrap">
-                  <p className="StudentReviewsCardContent">
-                    Great platform for learning
-                  </p>
-                </div>
-              </div>
-              <div className="StudentReviewsCard">
-                <div className="StudentReviewsCardInfoWrap">
-                  <div className="StudentReviewsCardInfoLeft">
-                    <img
-                      className="StudentReviewsCardProfile"
-                      src={ExampleProfile}
-                      alt="프로필"></img>
-                    <p className="StudentReviewsCardName">John Doe</p>
-                  </div>
-                  <div className="StudentReviewsCardInfoRight">
-                    <img
-                      className="StudentReviewsCardRate"
-                      src={ExampleRate}
-                      alt="별점"></img>
-                  </div>
-                </div>
-                <div className="StudentReviewsCardContentWrap">
-                  <p className="StudentReviewsCardContent">
-                    Great platform for learning
-                  </p>
-                </div>
-              </div>
+              ))}
               {/* Reviews_Dummy */}
             </div>
           </div>
@@ -215,10 +136,6 @@ const Main = () => {
                 />
               </SplideSlide>
             </SplideTrack>
-
-            <div className="splide__progress">
-              <div className="splide__progress__bar" />
-            </div>
 
             <div className="splide__arrows">
               <button
