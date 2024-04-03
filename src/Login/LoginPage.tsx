@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Content from "../components/ContentPage/Content";
 // import { useHistory } from "react-router-dom";
 import "./Login.css";
 
@@ -35,7 +36,8 @@ const LoginPage: React.FC = () => {
 
   return (
     <div className="login-page">
-      <div className="logo-container">
+      <Content />
+      {/* <div className="logo-container">
         <div className="circle-logo"></div>
         <div className="brand-name">SENSY</div>
       </div>
@@ -77,7 +79,7 @@ const LoginPage: React.FC = () => {
             Sign up
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
