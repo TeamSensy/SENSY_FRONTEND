@@ -1,4 +1,4 @@
-import "src/style/Main.style/Main.style.css";
+import "src/components/Main/style/Main.style.css"
 import Topbar from "src/components/Topbar/Topbar";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import MainImage from "src/assets/img/Main_Image.png";

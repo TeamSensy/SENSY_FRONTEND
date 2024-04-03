@@ -1,5 +1,5 @@
-import "src/style/Topbar.style/Topbar.style.css";
-import Logo from "src/assets/img/SENSY_Logo.png";
+import "src/components/Topbar/style/Topbar.style.css"
+import Logo from "src/assets/img/SENSY_Logo.svg";
 
 const Topbar = () => {
   return (
