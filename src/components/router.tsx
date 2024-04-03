@@ -9,7 +9,6 @@ const Router = () => {
       <GlobalStyle />
       <Routes>
         <Route path="/" element={<Main />}></Route>
-        <Route path="topbar" element={<Topbar />} />
       </Routes>
     </BrowserRouter>
   );
