@@ -1,11 +1,11 @@
+import * as S from "../../style/Content.style";
 import React, { useEffect, useState } from "react";
 import { dummyData } from "./data";
-import * as S from "../../style/Content.style";
 import Topbar from "../Topbar/Topbar";
+import MDEditor from "@uiw/react-md-editor";
 import heartImg from "../content/img/heart.svg";
 import nextImg from "../content/img/next.svg";
-import beforeImg from "../content/img/before.svg";
-import MDEditor from "@uiw/react-md-editor";
+import beforeImgs from "../content/img/before.svg";
 
 const Content: React.FC = () => {
   const markdown = `Just a link: www.nasa.gov.`;
@@ -29,7 +29,7 @@ const Content: React.FC = () => {
           <p>{dummyData[0].content2}</p>
           <S.ImgStyle src={dummyData[0].contentImg} />
           <img src={heartImg} alt="error" />
-          <img src={beforeImg} alt="error" />
+          <img src={beforeImgs} alt="error" />
           <img src={nextImg} alt="error" />
         </div>
       </S.ContentStyle>
