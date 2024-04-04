@@ -8,6 +8,7 @@ import nextImg from "../ContentPage/img/next.svg";
 import beforeImg from "../ContentPage/img/before.svg";
 import shareImg from "../ContentPage/img/share.svg";
 import sendImg from "../ContentPage/img/send.svg";
+import topImg from "../ContentPage/img/topImg.svg";
 
 const Content: React.FC = () => {
   const markdown = `Just a link: www.nasa.gov.`;
@@ -23,7 +24,7 @@ const Content: React.FC = () => {
       <S.All>
         <S.ContentStyle>
           <div key={dummyData[0].idx}>
-            <S.ImgStyle src={dummyData[0].previewImg} />
+            <S.TopImg src={topImg} alt="error" />
             <S.Title>{dummyData[0].title}</S.Title>
             <S.HightInfo>
               <S.User>{dummyData[0].user}</S.User>
@@ -32,8 +33,9 @@ const Content: React.FC = () => {
             </S.HightInfo>
             <S.Line />
             <S.Contents>{dummyData[0].content}</S.Contents>
-            <S.ImgStyle src={dummyData[0].contentImg} />
+            <S.ImgStyle src={dummyData[0].contentImg1_1} />
             <S.Contents>{dummyData[0].content2}</S.Contents>
+            <S.ImgStyle src={dummyData[0].contentImg1_2} />
             <S.Line />
             <S.CoverContent>
               <img src={heartImg} alt="error" />

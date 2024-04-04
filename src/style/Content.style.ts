@@ -16,8 +16,12 @@ export const ImgStyle = styled.img`
   margin-top:1vh;
   margin-bottom:1vh;
 `;
+export const TopImg = styled.img`
+  width: 60vw;
+  margin-bottom: 1vh;
+`;
 
-export const HightInfo = styled.div`
+export const HightInfo = styled.span`
   margin-bottom: 6vh;
 `;
 
@@ -34,10 +38,9 @@ export const Userid = styled.span`
   font-family: pretendard;
 `;
 
-export const Title = styled.p`
-  font-size : 35px;
+export const Title = styled.span`
+  font-size : 30px;
   font-weight: bold;
-  margin-bottom: 0.8vh;
   font-family: pretendard;
 `;
 
@@ -57,7 +60,7 @@ line-height:25px
 export const GoToPost = styled.div`
 background-color: #F8F9FA;
 width : 17vw;
-height : 5vh;
+height : 6vh;
 `;
 
 export const CoverContent = styled.div`
