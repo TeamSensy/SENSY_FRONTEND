@@ -106,21 +106,11 @@
 
 .PopularCoursesBottom {
   width: 80%;
-  height: 58%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.PopularCoursesLeftIcon {
-  position: absolute;
-  left: calc(15% + 10px);
-  cursor: pointer;
+  height: 340px;
 }
 
 .PopularCoursesCard {
-  width: 30%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -192,10 +182,8 @@
   font-weight: 500;
 }
 
-.PopularCoursesRightIcon {
-  position: absolute;
-  left: 80%;
-  cursor: pointer;
+.CardArrow {
+  opacity: 1;
 }
 
 .StudentReviewsWrap {
@@ -304,4 +292,18 @@
 .BannerImage {
   width: 70vw;
   height: 300px;
+}
+
+/* 페이지 매김 css */
+.splide__pagination__page {
+  width: 5px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.splide__pagination__page.is-active {
+  width: 20px;
+  height: 5px;
+  border-radius: 2px;
+  margin: 0px 5px;
 }
