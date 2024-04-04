@@ -25,12 +25,13 @@ const Content: React.FC = () => {
         <S.ContentStyle>
           <div key={dummyData[0].idx}>
             <S.TopImg src={topImg} alt="error" />
-            <S.Title>{dummyData[0].title}</S.Title>
-            <S.HightInfo>
-              <S.User>{dummyData[0].user}</S.User>
-              <span style={{ fontSize: 13 }}> | </span>
-              <S.Userid>{dummyData[0].date}</S.Userid>
-            </S.HightInfo>
+            <S.TitleNInfo>
+              <S.Title>{dummyData[0].title}</S.Title>
+              <S.HightInfo>
+                <S.User>{dummyData[0].user}</S.User>
+                <S.Date>{dummyData[0].date}</S.Date>
+              </S.HightInfo>
+            </S.TitleNInfo>
             <S.Line />
             <S.Contents>{dummyData[0].content}</S.Contents>
             <S.ImgStyle src={dummyData[0].contentImg1_1} />

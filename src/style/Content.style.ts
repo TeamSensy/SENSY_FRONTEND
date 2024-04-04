@@ -8,34 +8,25 @@ export const All = styled.div`
 
 export const ContentStyle = styled.div`
   width: 60vw;
-  margin-top : 10vh;
+  margin-top : 5vh;
 `;
 
 export const ImgStyle = styled.img`
   width: 50vw;
-  margin-top:1vh;
-  margin-bottom:1vh;
+  margin-top:2vh;
+  margin-bottom:2vh;
 `;
 export const TopImg = styled.img`
   width: 60vw;
   margin-bottom: 1vh;
 `;
 
-export const HightInfo = styled.span`
-  margin-bottom: 6vh;
-`;
-
-export const User = styled.span`
-  font-size : 13px;
-  font-weight: bold;
-  font-family: pretendard;
-  margin-bottom: 6vh;
-`;
-
-export const Userid = styled.span`
-  font-size : 13px;
-  font-weight: bold;
-  font-family: pretendard;
+export const TitleNInfo = styled.div`
+  display: flex;
+  height : 4vh;
+  justify-content : space-evenly;
+  margin-top : 1vh;
+  margin-bottom: 2vh;
 `;
 
 export const Title = styled.span`
@@ -44,9 +35,29 @@ export const Title = styled.span`
   font-family: pretendard;
 `;
 
+export const HightInfo = styled.span`
+  width : 43vw;
+  height : 4vh;
+  align-items : flex-end;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const User = styled.span`
+  font-size : 15px;
+  font-weight: ;
+  font-family: pretendard;
+`;
+
+export const Date = styled.span`
+  font-size : 17px;
+  color : #CECECE;
+  font-family: pretendard;
+`;
+
 export const Line = styled.div`
   border-bottom: 2px solid #F2F2F2;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   margin-top: 2vh;
 `;
 
