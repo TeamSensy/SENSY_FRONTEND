@@ -1,7 +1,10 @@
+import "src/style/Main.style/Main.style.css";
+import Header from "src/components/Topbar/Topbar";
+
 const Main = () => {
   return (
-    <div>
-      <div></div>
+    <div className="MainPage">
+      <Header />
     </div>
   );
 };
