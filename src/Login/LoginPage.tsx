@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-// import { useHistory } from "react-router-dom";
 import "./Login.css";
+import logo from "../img/circle logo 4.svg";
+import loginimg from "../img/loginimg.png";
+import pwimg from "../img/pwimg.png";
+import bgimg from "../img/bgimg.svg";
 
 const LoginPage: React.FC = () => {
-  const [id, setId] = useState("");
-  const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [id, setId] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [errorMessage, setErrorMessage] = useState<string>("");
   // const history = useHistory();
 
   const handleLogin = () => {
@@ -29,52 +32,49 @@ const LoginPage: React.FC = () => {
   };
 
   const handleSignUp = () => {
-    // 회원가입 페이지로
-    // history.push("/SignUp/SignUpPage"); 
+    //회원가입 페이지로 이동...
   };
 
   return (
-    <div className="login-page">
-      <div className="logo-container">
-        <div className="circle-logo"></div>
+    <div>
+      <img src={bgimg} className="img" alt="backgroundimage" />
+      <div className="login-page">
+        <img className="circle-logo" src={logo} alt="logoimage" />
         <div className="brand-name">SENSY</div>
-      </div>
-
-      <div className="input-container">
-        <div className="input-group">
-          <input
-            className="input-field"
-            type="text"
-            placeholder="ID"
-            value={id}
-            onChange={(e) => setId(e.target.value)}
-          />
-          <input
-            className="input-field"
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-
-        <button className="login-button" onClick={handleLogin}>
-          Login
-        </button>
-
-        <div className="error-message">{errorMessage}</div>
-
-        <div className="links-container">
-          <div className="link" onClick={handleForgotId}>
-            Find ID (email)
+        <div className="input-container">
+          <div className="input-group">
+            <img src={loginimg} className="loginimg" alt="" />
+            <input
+              className="input-field"
+              type="text"
+              placeholder="ID"
+              id="id"
+              value={id}
+              onChange={(e) => setId(e.target.value)}
+            />
+            <img src={pwimg} alt="passwordimage" />
+            <input
+              className="input-field"
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
           </div>
-          <div className="divider"></div>
-          <div className="link" onClick={handleForgotPassword}>
-            Find a Password
-          </div>
-          <div className="divider"></div>
-          <div className="link" onClick={handleSignUp}>
-            Sign up
+          <button className="login-button" onClick={handleLogin}>
+            <p className="Login"> Log in </p>
+          </button>
+          <div className="error-message">{errorMessage}</div>
+          <div className="links-container">
+            <a className="link" onClick={handleForgotId}>
+              Find ID (email) |
+            </a>
+            <a className="link" onClick={handleForgotPassword}>
+              Find a Password |
+            </a>
+            <a className="link" onClick={handleSignUp}>
+              Sign up
+            </a>
           </div>
         </div>
       </div>
