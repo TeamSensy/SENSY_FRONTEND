@@ -18,9 +18,10 @@
     "web-vitals": "^3.5.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.2",
     "@types/jest": "^29.5.12",
-    "@types/react": "^18.2.73",
+    "@types/react": "^18.2.74",
     "@types/testing-library__jest-dom": "^6.0.0",
     "ts-node": "^10.5.0"
   },

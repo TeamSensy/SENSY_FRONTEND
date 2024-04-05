@@ -4,7 +4,6 @@ import logo from "../assets/img/circle logo 4.svg";
 import loginimg from "../assets/img/loginimg.svg";
 import pwimg from "../assets/img/pwimg.svg";
 import bgimg from "../assets/img/bgimg.svg";
-// import idimg from "../assets/img/idimg.svg";
 
 const LoginPage: React.FC = () => {
   const [id, setId] = useState<string>("");
