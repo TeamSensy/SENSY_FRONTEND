@@ -1,14 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import GlobalStyle from "src/style/global.style";
-import Main from "src/components/Main/Main";
+import React from "react";
+import SignUpPage from "../SignUp/SignUpPage";
+import LoginPage from "../Login/LoginPage";
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <GlobalStyle />
-      <Routes>
-        <Route path="/" element={<Main />} />
-      </Routes>
+      <React.Fragment>
+        <Routes>
+          <Route path="/SignUp" element={<SignUpPage />} />
+          <Route path="/Login" element={<LoginPage />} />
+        </Routes>
+      </React.Fragment>
     </BrowserRouter>
   );
 };
