@@ -72,6 +72,7 @@ const MyPage = () => {
             </Splide>
           </div>
           {/* Class in progress Card */}
+          
           {/* Course completion Card */}
           <div className="CourseCompletionWrap">
             <div className="CourseCompletionTitle">Course completion</div>
@@ -119,6 +120,7 @@ const MyPage = () => {
             </Splide>
           </div>
           {/* Course completion Card */}
+
           {/* Saved Class Card */}
           <div className="SavedClassWrap">
             <div className="SavedClassTitle">Saved Class</div>
