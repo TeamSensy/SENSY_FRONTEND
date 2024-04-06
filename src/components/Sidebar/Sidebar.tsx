@@ -11,19 +11,11 @@ const Sidebar = () => {
           <img className="ProfileImage" src={ProfileImg} alt="프로필 사진" />
           <div className="ProfileNameWrap">
             <p className="ProfileName">Gil Dong Hong</p>
-            <img
-              className="ProfileNameImage"
-              src={EditProfileNameImg}
-              alt="이름 변경"
-            />
+            <img className="ProfileNameImage" src={EditProfileNameImg} alt="이름 변경"/>
           </div>
           <div className="ProfileInfoWrap">
             <p className="ProfileInfo">Student · South Korea · 2007</p>
-            <img
-              className="ProfileInfoImage"
-              src={EditProfileInfoImg}
-              alt="내 정보 수정"
-            />
+            <img className="ProfileInfoImage" src={EditProfileInfoImg} alt="내 정보 수정"/>
           </div>
         </div>
       </div>

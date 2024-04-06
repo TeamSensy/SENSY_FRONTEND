@@ -14,7 +14,7 @@
 }
 
 .MyPage {
-  width: calc(100% - 350px);
+  width: calc(100% - 320px);
   height: auto;
   display: flex;
   flex-direction: column;
