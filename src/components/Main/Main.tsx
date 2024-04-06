@@ -1,5 +1,8 @@
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
-import { CardDummy, ReviewsDummy } from "src/components/Main/MainDummy";
+import {
+  CardDummy,
+  ReviewsDummy,
+} from "src/components/Main/DummyData/MainDummy";
 import Topbar from "src/components/Topbar/Topbar";
 import BottomBar from "src/components/BottomBar/BottomBar";
 import MainImage from "src/assets/img/MainImage.svg";
@@ -42,7 +45,9 @@ const Main = () => {
           <div className="PopularCourses">
             <div className="PopularCoursesTop">
               <p className="PopularCoursesTitle">Popular Courses</p>
-              <p className="PopularCoursesDescription">Check out our best sellers</p>
+              <p className="PopularCoursesDescription">
+                Check out our best sellers
+              </p>
               <div className="PopularCoursesButtonWrap">
                 <div className="PopularCoursesButton">
                   <button className="AddToCartButton">Add to Cart</button>
@@ -57,15 +62,25 @@ const Main = () => {
                   {CardDummy.map((data) => (
                     <SplideSlide key={data.id}>
                       <div className="PopularCoursesCard">
-                        <img className="PopularCoursesCardImage" src={CardDummyImage} alt="카드 이미지"></img>
+                        <img
+                          className="PopularCoursesCardImage"
+                          src={CardDummyImage}
+                          alt="카드 이미지"></img>
                         <div className="PopularCoursesCardInfo">
                           <div className="PopularCoursesCardTitleWrap">
-                            <span className="PopularCoursesCardTitle">{data.title}</span>
+                            <span className="PopularCoursesCardTitle">
+                              {data.title}
+                            </span>
                           </div>
                           <div className="PopularCoursesCardContentWrap">
-                            <p className="PopularCoursesCardContent">{data.content}</p>
+                            <p className="PopularCoursesCardContent">
+                              {data.content}
+                            </p>
                             <div className="PopularCoursesCardLikeWrap">
-                              <img className="PopularCoursesCardLikeIcon" src={LikeIcon} alt="좋아요 아이콘"></img>
+                              <img
+                                className="PopularCoursesCardLikeIcon"
+                                src={LikeIcon}
+                                alt="좋아요 아이콘"></img>
                               <p className="PopularCoursesCardLike">Like</p>
                             </div>
                           </div>
@@ -97,11 +112,17 @@ const Main = () => {
                 <div className="StudentReviewsCard" key={data.id}>
                   <div className="StudentReviewsCardInfoWrap">
                     <div className="StudentReviewsCardInfoLeft">
-                      <img className="StudentReviewsCardProfile" src={ExampleProfile} alt="프로필"></img>
+                      <img
+                        className="StudentReviewsCardProfile"
+                        src={ExampleProfile}
+                        alt="프로필"></img>
                       <p className="StudentReviewsCardName">{data.name}</p>
                     </div>
                     <div className="StudentReviewsCardInfoRight">
-                      <img className="StudentReviewsCardRate" src={ExampleRate} alt="별점"></img>
+                      <img
+                        className="StudentReviewsCardRate"
+                        src={ExampleRate}
+                        alt="별점"></img>
                     </div>
                   </div>
                   <div className="StudentReviewsCardContentWrap">
@@ -116,16 +137,32 @@ const Main = () => {
         <div className="BannerWrap">
           <Splide options={BannerOption}>
             <SplideSlide>
-              <img className="BannerImage" src={ExampleVanner} alt="배너 이미지 1"/>
+              <img
+                className="BannerImage"
+                src={ExampleVanner}
+                alt="배너 이미지 1"
+              />
             </SplideSlide>
             <SplideSlide>
-              <img className="BannerImage" src={ExampleVanner}alt="배너 이미지 2"/>
+              <img
+                className="BannerImage"
+                src={ExampleVanner}
+                alt="배너 이미지 2"
+              />
             </SplideSlide>
             <SplideSlide>
-              <img className="BannerImage" src={ExampleVanner} alt="배너 이미지 3"/>
+              <img
+                className="BannerImage"
+                src={ExampleVanner}
+                alt="배너 이미지 3"
+              />
             </SplideSlide>
             <SplideSlide>
-              <img className="BannerImage" src={ExampleVanner} alt="배너 이미지 4"/>
+              <img
+                className="BannerImage"
+                src={ExampleVanner}
+                alt="배너 이미지 4"
+              />
             </SplideSlide>
           </Splide>
         </div>
