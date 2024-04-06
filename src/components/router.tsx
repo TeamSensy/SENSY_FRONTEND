@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GlobalStyle from "src/style/global.style";
 import Main from "src/components/Main/Main";
+import MyPage from "src/components/MyPage/MyPage";
 
 const Router = () => {
   return (
@@ -8,6 +9,7 @@ const Router = () => {
       <GlobalStyle />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/myPage" element={<MyPage />} />
       </Routes>
     </BrowserRouter>
   );
