@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent, Dispatch, SetStateAction } from "react";
-import "./SignUp.css";
+import "./SignUp.scss";
 import iimmgg from "../assets/img/bgimg.svg";
 import logo from "../assets/img/circle logo 4.svg";
 import idimg from "../assets/img/idimg.svg";
