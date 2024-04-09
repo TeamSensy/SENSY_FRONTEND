@@ -37,19 +37,24 @@ const Content: React.FC = () => {
             <S.ImgStyle src={dummyData[0].contentImg1_1} />
             <S.Contents>{dummyData[0].content2}</S.Contents>
             <S.ImgStyle src={dummyData[0].contentImg1_2} />
+            <S.Contents>{dummyData[0].content3}</S.Contents>
             <S.Line />
-            <S.CoverContent>
-              <img src={heartImg} alt="error" />
-              <img src={shareImg} alt="error" />
-            </S.CoverContent>
-            <S.CoverContent>
+            <S.BottomBar>
+              <span>
+                <S.BottomImg src={heartImg} alt="error" /> Like
+              </span>
+              <span>
+                <S.BottomImg src={shareImg} alt="error" /> Share
+              </span>
+            </S.BottomBar>
+            <S.MovePost>
               <S.GoToPost>
                 <img src={beforeImg} alt="error" />
               </S.GoToPost>
               <S.GoToPost>
                 <img src={nextImg} alt="error" />
               </S.GoToPost>
-            </S.CoverContent>
+            </S.MovePost>
             <textarea>
               <img src={sendImg} alt="error" />
             </textarea>

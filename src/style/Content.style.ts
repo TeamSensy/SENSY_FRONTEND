@@ -18,7 +18,7 @@ export const ImgStyle = styled.img`
 `;
 export const TopImg = styled.img`
   width: 60vw;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 `;
 
 export const TitleNInfo = styled.div`
@@ -57,8 +57,8 @@ export const Date = styled.span`
 
 export const Line = styled.div`
   border-bottom: 2px solid #F2F2F2;
-  margin-bottom: 1vh;
-  margin-top: 2vh;
+  margin-bottom: 3vh;
+  margin-top: 4vh;
 `;
 
 export const Contents = styled.div`
@@ -68,14 +68,24 @@ font-family: pretendard;
 line-height:25px
 `;
 
+export const BottomImg = styled.img`
+width: 1.5vw;
+`;
+
 export const GoToPost = styled.div`
 background-color: #F8F9FA;
 width : 17vw;
 height : 6vh;
 `;
 
-export const CoverContent = styled.div`
-display: flex;
+export const BottomBar = styled.div`
 background-color:red;
+display: flex;
+justify-content : space-between;
+font-size: 13px;
+`;
+
+export const MovePost = styled.div`
+display: flex;
 justify-content : space-between;
 `;
