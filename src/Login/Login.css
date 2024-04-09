@@ -2,17 +2,17 @@
   position: absolute;
   width: 311px;
   height: 596px;
-  left: 104px;
-  top: 26px;
 }
-
+.img {
+  right: 500px;
+}
 .circle-logo {
   /* circle logo 4 */
   position: absolute;
   width: 181px;
   height: 181px;
-  left: 1433px;
-  top: 216px;
+  left: 285px;
+  top: 100px;
 }
 
 .brand-name {
@@ -20,21 +20,17 @@
   position: absolute;
   width: 234px;
   height: 84px;
-  left: 1411px;
-  top: 393px;
-
+  left: 255px;
+  top: 290px;
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 900;
   font-size: 70px;
   line-height: 84px;
-  /* identical to box height */
-
   color: #1c3879;
 }
 
 .input-container {
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,8 +39,8 @@
   position: absolute;
   width: 311px;
   height: 282px;
-  left: 1374px;
-  top: 530px;
+  left: 215px;
+  top: 430px;
 }
 
 .input-group {

@@ -8,8 +8,8 @@ const Router = () => {
     <BrowserRouter>
       <React.Fragment>
         <Routes>
-          <Route path="/SignUp" element={<SignUp/>} />
-          <Route path="/Login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </React.Fragment>
     </BrowserRouter>
