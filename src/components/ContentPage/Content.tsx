@@ -67,7 +67,7 @@ const Content: React.FC = () => {
             <div>
               <input></input>
               <button>
-                <img src={sendImg} alt="error"></img>
+                <img src={sendImg} alt="error" />
               </button>
             </div>
           </div>
