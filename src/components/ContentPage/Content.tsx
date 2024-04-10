@@ -2,7 +2,7 @@ import * as S from "../../style/Content.style";
 import React, { useEffect, useState } from "react";
 import { dummyData } from "./data";
 import Topbar from "../Topbar/Topbar";
-import ReactMarkdown from "react-markdown";
+// import ReactMarkdown from "react-markdown";
 import heartImg from "../ContentPage/img/heart.svg";
 import nextImg from "../ContentPage/img/next.svg";
 import beforeImg from "../ContentPage/img/before.svg";
@@ -40,24 +40,36 @@ const Content: React.FC = () => {
             <S.Contents>{dummyData[0].content3}</S.Contents>
             <S.Line />
             <S.BottomBar>
-              <span>
-                <S.BottomImg src={heartImg} alt="error" /> Like
-              </span>
-              <span>
+              <S.BottomItems>
+                <S.BottomImg src={heartImg} alt="error" />
+                Like
+              </S.BottomItems>
+              <S.BottomItems>
                 <S.BottomImg src={shareImg} alt="error" /> Share
-              </span>
+              </S.BottomItems>
             </S.BottomBar>
             <S.MovePost>
-              <S.GoToPost>
-                <img src={beforeImg} alt="error" />
-              </S.GoToPost>
-              <S.GoToPost>
-                <img src={nextImg} alt="error" />
-              </S.GoToPost>
+              <S.GoToPost_l>
+                <S.GoToPostImg src={beforeImg} alt="error" />
+                <div>
+                  <S.OtherTitle>{dummyData[0].title}</S.OtherTitle>
+                  <S.OtherUser_l>{dummyData[0].user}</S.OtherUser_l>
+                </div>
+              </S.GoToPost_l>
+              <S.GoToPost_r>
+                <div>
+                  <S.OtherTitle>{dummyData[1].title}</S.OtherTitle>
+                  <S.OtherUser_r>{dummyData[1].user}</S.OtherUser_r>
+                </div>
+                <S.GoToPostImg src={nextImg} alt="error" />
+              </S.GoToPost_r>
             </S.MovePost>
-            <textarea>
-              <img src={sendImg} alt="error" />
-            </textarea>
+            <div>
+              <input></input>
+              <button>
+                <img src={sendImg} alt="error"></img>
+              </button>
+            </div>
           </div>
         </S.ContentStyle>
       </S.All>
