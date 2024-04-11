@@ -33,10 +33,9 @@ const Content: React.FC = () => {
               </S.HightInfo>
             </S.TitleNInfo>
             <S.Line />
+            <S.ImgStyle src={dummyData[0].contentImg1} />
             <S.Contents>{dummyData[0].content}</S.Contents>
-            <S.ImgStyle src={dummyData[0].contentImg1_1} />
             <S.Contents>{dummyData[0].content2}</S.Contents>
-            <S.ImgStyle src={dummyData[0].contentImg1_2} />
             <S.Line />
             <S.CoverContent>
               <img src={heartImg} alt="error" />
