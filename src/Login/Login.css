@@ -11,8 +11,8 @@
   position: absolute;
   width: 181px;
   height: 181px;
-  left: 1433px;
-  top: 216px;
+  left: 1135px;
+  top: 170px;
 }
 
 .brand-name {
@@ -20,30 +20,26 @@
   position: absolute;
   width: 234px;
   height: 84px;
-  left: 1411px;
-  top: 393px;
-
+  left: 1110px;
+  top: 350px;
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 900;
   font-size: 70px;
   line-height: 84px;
-  /* identical to box height */
-
   color: #1c3879;
 }
 
 .input-container {
-  /* Auto layout */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0px;
+  /* align-items: center; */
+  /* padding: 0px; */
   gap: 9px;
   position: absolute;
   width: 311px;
   height: 282px;
-  left: 1374px;
+  left: 1180px;
   top: 530px;
 }
 
@@ -53,13 +49,12 @@
   align-items: flex-start;
   padding: 0px;
   gap: 8px;
-
   width: 311px;
   height: 112px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  /* flex: none; */
+  /* order: 0; */
+  /* flex-grow: 0; */
+  /* left: 1110px; */
 }
 
 .loginimg {
@@ -71,26 +66,19 @@
 }
 
 .input-field {
-  /* Frame 14 */
-
   box-sizing: border-box;
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
   align-items: center;
   padding: 18px 18px;
-  gap: 8px;
-
+  /* gap: 8px; */
   width: 311px;
   height: 52px;
-
   border: 1px solid #d9d9d9;
   border-radius: 10px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
+  /* flex: none; */
+  /* order: 0; */
   flex-grow: 0;
 }
 
@@ -173,6 +161,6 @@
   flex-grow: 0;
 }
 .id {
-  background-image: url("../img/idimg.svg");
+  background-image: url("../assets//img/idimg.svg");
   background-repeat: no-repeat;
 }

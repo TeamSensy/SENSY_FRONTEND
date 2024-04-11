@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route  } from "react-router-dom";
 import React from "react";
 import SignUpPage from "../SignUp/SignUpPage";
 import LoginPage from "../LogIn/LoginPage";
@@ -8,8 +8,8 @@ const Router = () => {
     <BrowserRouter>
       <React.Fragment>
         <Routes>
-          <Route path="/SignUp" element={<SignUpPage />} />
-          <Route path="/Login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </React.Fragment>
     </BrowserRouter>
