@@ -135,3 +135,11 @@ export const MovePost = styled.div`
 display: flex;
 justify-content : space-between;
 `;
+
+export const Coment = styled.div`
+display: flex;
+`;
+
+export const Input = styled.input`
+outline: none;
+`;

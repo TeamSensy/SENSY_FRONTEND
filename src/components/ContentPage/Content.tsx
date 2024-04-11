@@ -33,10 +33,9 @@ const Content: React.FC = () => {
               </S.HightInfo>
             </S.TitleNInfo>
             <S.Line />
-            <S.Contents>{dummyData[0].content}</S.Contents>
             <S.ImgStyle src={dummyData[0].contentImg1_1} />
+            <S.Contents>{dummyData[0].content}</S.Contents>
             <S.Contents>{dummyData[0].content2}</S.Contents>
-            <S.ImgStyle src={dummyData[0].contentImg1_2} />
             <S.Contents>{dummyData[0].content3}</S.Contents>
             <S.Line />
             <S.BottomBar>
@@ -64,12 +63,14 @@ const Content: React.FC = () => {
                 <S.GoToPostImg src={nextImg} alt="error" />
               </S.GoToPost_r>
             </S.MovePost>
-            <div>
-              <input></input>
+            <S.Coment>
+              <input
+              type="text"
+              placeholder="Coment"></input>
               <button>
                 <img src={sendImg} alt="error" />
               </button>
-            </div>
+            </S.Coment>
           </div>
         </S.ContentStyle>
       </S.All>
