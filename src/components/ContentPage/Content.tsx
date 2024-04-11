@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import { dummyData } from "./data";
 import Topbar from "../Topbar/Topbar";
 // import ReactMarkdown from "react-markdown";
-import heartImg from "../ContentPage/img/heart.svg";
-import nextImg from "../ContentPage/img/next.svg";
-import beforeImg from "../ContentPage/img/before.svg";
-import shareImg from "../ContentPage/img/share.svg";
-import sendImg from "../ContentPage/img/send.svg";
-import topImg from "../ContentPage/img/topImg.svg";
+import heartImg from "../../assets/img/heart.svg";
+import nextImg from "../../assets/img/next.svg";
+import beforeImg from "../../assets/img/before.svg";
+import shareImg from "../../assets/img/share.svg";
+import sendImg from "../../assets/img/send.svg";
+import topImg from "../../assets/img/topImg.svg";
 
 const Content: React.FC = () => {
   const markdown = `Just a link: www.nasa.gov.`;
@@ -33,7 +33,7 @@ const Content: React.FC = () => {
               </S.HightInfo>
             </S.TitleNInfo>
             <S.Line />
-            <S.ImgStyle src={dummyData[0].contentImg1_1} />
+            <S.ImgStyle src={dummyData[0].contentImg1} />
             <S.Contents>{dummyData[0].content}</S.Contents>
             <S.Contents>{dummyData[0].content2}</S.Contents>
             <S.Contents>{dummyData[0].content3}</S.Contents>
