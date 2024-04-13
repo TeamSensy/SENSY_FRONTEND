@@ -7,12 +7,10 @@ import pwimg from "../assets/img/pwimg.svg";
 import bgimg from "../assets/img/bgimg.svg";
 
 const LoginPage: React.FC = () => {
-  const navigate = useNavigate();
-
   const [id, setId] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [errorMessage, setErrorMessage] = useState<string>("");
-  // const history = useHistory();
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     // const validId = /^[a-zA-Z0-9_]+$/.test(id);
