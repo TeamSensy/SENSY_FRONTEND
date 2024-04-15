@@ -13,9 +13,9 @@ const LoginPage: React.FC = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // const validId = /^[a-zA-Z0-9_]+$/.test(id);
+    const validId = /^[a-zA-Z0-9_]+$/.test(id);
 
-    if (id === "example" && password === "password") {
+    if (validId && id === "example" && password === "password") {
       // 로그인 성공
       alert("로그인 성공!");
     } else {
