@@ -1,5 +1,5 @@
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
-import { CardDummy } from "src/Dummy/Main/MainDummy";
+import { CardDummy } from "src/Dummy/CardDummy";
 import CardDummyImage from "src/assets/img/CardImage.svg";
 import LeftIcon from "src/assets/img/LeftIcon.svg";
 import RightIcon from "src/assets/img/RightIcon.svg";

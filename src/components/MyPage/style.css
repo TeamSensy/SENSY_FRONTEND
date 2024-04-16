@@ -1,0 +1,64 @@
+.MyPagePage {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.MyPageWrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 60px;
+}
+
+.MyPage {
+  width: calc(100% - 320px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.ClassInProgressWrap {
+  width: 80%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.ClassInProgressTitle {
+  color: #000;
+  font-family: Pretendard-Bold;
+  font-size: 20px;
+  padding-left: 23px;
+  margin-bottom: 10px;
+}
+
+.CourseCompletionWrap {
+  width: 80%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.CourseCompletionTitle {
+  color: #000;
+  font-family: Pretendard-Bold;
+  font-size: 20px;
+  padding-left: 23px;
+  margin-bottom: 10px;
+}
+
+.SavedClassWrap {
+  width: 80%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.SavedClassTitle {
+  color: #000;
+  font-family: Pretendard-Bold;
+  font-size: 20px;
+  padding-left: 23px;
+  margin-bottom: 10px;
+}
