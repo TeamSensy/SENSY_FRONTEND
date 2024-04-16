@@ -1,0 +1,178 @@
+.login-page {
+  position: absolute;
+  width: 311px;
+  height: 596px;
+  left: 104px;
+  top: 26px;
+}
+
+.circle-logo {
+  /* circle logo 4 */
+  position: absolute;
+  width: 181px;
+  height: 181px;
+  left: 1433px;
+  top: 216px;
+}
+
+.brand-name {
+  /* SENSY */
+  position: absolute;
+  width: 234px;
+  height: 84px;
+  left: 1411px;
+  top: 393px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 84px;
+  /* identical to box height */
+
+  color: #1c3879;
+}
+
+.input-container {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 9px;
+  position: absolute;
+  width: 311px;
+  height: 282px;
+  left: 1374px;
+  top: 530px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 311px;
+  height: 112px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.loginimg {
+  /* Group 3 */
+  bottom: 100px;
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+
+.input-field {
+  /* Frame 14 */
+
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 18px;
+  gap: 8px;
+
+  width: 311px;
+  height: 52px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.login-button {
+  /* Rectangle 5 */
+
+  box-sizing: border-box;
+  margin-top: 50px;
+  /* position: absolute; */
+  width: 311px;
+  height: 50px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #1c3879;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+
+  /* btn */
+
+  width: 311px;
+  height: 50px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.Login {
+  /* 로그인 */
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #ffffff;
+  margin-top: 9px;
+}
+
+.links-container {
+  /* Frame 427318939 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 311px;
+  height: 17px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.link {
+  /* Find ID (email) */
+  margin-left: 2px;
+  width: 110px;
+  height: 16px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.id {
+  background-image: url("../img/idimg.svg");
+  background-repeat: no-repeat;
+}

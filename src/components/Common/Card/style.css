@@ -29,9 +29,8 @@
 
 .PopularCoursesCardTitle {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Regular;
   font-size: 13px;
-  font-weight: 400;
 }
 
 .PopularCoursesCardContentWrap {
@@ -45,9 +44,8 @@
   width: 82%;
   height: 100%;
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Medium;
   font-size: 16px;
-  font-weight: 500;
 }
 
 .PopularCoursesCardLikeWrap {
@@ -66,9 +64,8 @@
 
 .PopularCoursesCardLike {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Medium;
   font-size: 13px;
-  font-weight: 500;
 }
 
 .CardArrow {
