@@ -1,41 +1,14 @@
-import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
-import {
-  CardDummy,
-  ReviewsDummy,
-} from "src/components/Main/DummyData/MainDummy";
-import Topbar from "src/components/Topbar/Topbar";
-import BottomBar from "src/components/BottomBar/BottomBar";
+import { ReviewsDummy } from "src/Dummy/Main/MainDummy";
+import Topbar from "src/components/Common/Topbar/Topbar";
+import Card from "src/components/Common/Card/Card";
+import Banner from "src/components/Common/Banner/Banner";
+import BottomBar from "src/components/Common/BottomBar/BottomBar";
 import MainImage from "src/assets/img/MainImage.svg";
-import CardDummyImage from "src/assets/img/CardImage.svg";
-import LeftIcon from "src/assets/img/LeftIcon.svg";
-import RightIcon from "src/assets/img/RightIcon.svg";
-import LikeIcon from "src/assets/img/LikeIcon.svg";
 import ExampleProfile from "src/assets/img/ProfileImage.svg";
 import ExampleRate from "src/assets/img/Rate.svg";
-import ExampleVanner from "src/assets/img/BannerImage.svg";
-import "@splidejs/react-splide/css";
-import "src/components/Main/style/Main.style.css";
+import "src/components/Main/style.css";
 
 const Main = () => {
-  const CouresesOption = {
-    width: "100%",
-    height: "340px",
-    padding: "23px",
-    perPage: 3,
-    gap: "30px",
-    drag: false,
-    pagination: false,
-  };
-  const BannerOption = {
-    type: "loop",
-    width: "70vw",
-    height: 300,
-    perPage: 1,
-    arrows: false,
-    interval: 5000,
-    autoplay: true,
-    pauseOnHover: false,
-  };
   return (
     <div className="MainPage">
       <Topbar />
@@ -56,50 +29,7 @@ const Main = () => {
               </div>
             </div>
             <div className="PopularCoursesBottom">
-              {/* Card_Dummy */}
-              <Splide options={CouresesOption} hasTrack={false}>
-                <SplideTrack>
-                  {CardDummy.map((data) => (
-                    <SplideSlide key={data.id}>
-                      <div className="PopularCoursesCard">
-                        <img
-                          className="PopularCoursesCardImage"
-                          src={CardDummyImage}
-                          alt="카드 이미지"></img>
-                        <div className="PopularCoursesCardInfo">
-                          <div className="PopularCoursesCardTitleWrap">
-                            <span className="PopularCoursesCardTitle">
-                              {data.title}
-                            </span>
-                          </div>
-                          <div className="PopularCoursesCardContentWrap">
-                            <p className="PopularCoursesCardContent">
-                              {data.content}
-                            </p>
-                            <div className="PopularCoursesCardLikeWrap">
-                              <img
-                                className="PopularCoursesCardLikeIcon"
-                                src={LikeIcon}
-                                alt="좋아요 아이콘"></img>
-                              <p className="PopularCoursesCardLike">Like</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </SplideSlide>
-                  ))}
-                </SplideTrack>
-
-                <div className="splide__arrows">
-                  <button className="CardArrow splide__arrow splide__arrow--prev">
-                    <img src={LeftIcon} alt=""></img>
-                  </button>
-                  <button className="CardArrow splide__arrow splide__arrow--next">
-                    <img src={RightIcon} alt=""></img>
-                  </button>
-                </div>
-              </Splide>
-              {/* Card_Dummy */}
+              <Card />
             </div>
           </div>
         </div>
@@ -134,38 +64,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="BannerWrap">
-          <Splide options={BannerOption}>
-            <SplideSlide>
-              <img
-                className="BannerImage"
-                src={ExampleVanner}
-                alt="배너 이미지 1"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                className="BannerImage"
-                src={ExampleVanner}
-                alt="배너 이미지 2"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                className="BannerImage"
-                src={ExampleVanner}
-                alt="배너 이미지 3"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                className="BannerImage"
-                src={ExampleVanner}
-                alt="배너 이미지 4"
-              />
-            </SplideSlide>
-          </Splide>
-        </div>
+        <Banner />
         <BottomBar />
       </div>
     </div>
