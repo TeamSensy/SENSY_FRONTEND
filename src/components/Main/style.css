@@ -49,16 +49,14 @@
 
 .PopularCoursesTitle {
   color: #1c3879;
-  font-family: Pretendard;
+  font-family: Pretendard-Bold;
   font-size: 36px;
-  font-weight: bold;
 }
 
 .PopularCoursesDescription {
   color: #1c3879;
-  font-family: Pretendard;
+  font-family: Pretendard-Regular;
   font-size: 12px;
-  font-weight: 400;
 }
 
 .PopularCoursesButtonWrap {
@@ -81,9 +79,8 @@
   width: 45%;
   height: 100%;
   color: #1c3879;
-  font-family: Pretendard;
+  font-family: Pretendard-Medium;
   font-size: 12px;
-  font-weight: 500;
   cursor: pointer;
   border: 1px solid #1c3879;
   border-radius: 6px;
@@ -95,9 +92,8 @@
   width: 45%;
   height: 100%;
   color: #fff;
-  font-family: Pretendard;
+  font-family: Pretendard-Medium;
   font-size: 12px;
-  font-weight: 500;
   cursor: pointer;
   border: none;
   border-radius: 6px;
@@ -138,9 +134,8 @@
 
 .StudentReviewsTitle {
   color: #1c3879;
-  font-family: Pretendard;
+  font-family: Pretendard-Bold;
   font-size: 36px;
-  font-weight: bold;
 }
 
 .StudentReviewsCard {
@@ -176,9 +171,8 @@
 
 .StudentReviewsCardName {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Medium;
   font-size: 14px;
-  font-weight: 400;
 }
 
 .StudentReviewsCardInfoRight {
@@ -197,7 +191,6 @@
 
 .StudentReviewsCardContent {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Regular;
   font-size: 14px;
-  font-weight: 400;
 }

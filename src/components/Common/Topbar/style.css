@@ -38,9 +38,8 @@
 
 .HeaderSensy {
   color: #1c3879;
-  font-family: Pretendard;
+  font-family: Pretendard-Black;
   font-size: 24px;
-  font-weight: bold;
 }
 
 .HeaderInfoWrap {
@@ -65,7 +64,7 @@
   width: 250px;
   height: 90%;
   font-size: 12px;
-  font-family: Pretendard;
+  font-family: Pretendard-Regular;
   outline: none;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
@@ -76,17 +75,15 @@
 
 .HeaderHome {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Regular;
   font-size: 16px;
-  font-weight: 400;
   cursor: pointer;
 }
 
 .HeaderLearn {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Regular;
   font-size: 16px;
-  font-weight: 400;
   cursor: pointer;
 }
 
@@ -100,9 +97,8 @@
 
 .HeaderLogIn {
   color: #1c3879;
-  font-family: Pretendard;
+  font-family: Pretendard-Medium;
   font-size: 12px;
-  font-weight: 500;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -115,9 +111,8 @@
 
 .HeaderSignUp {
   color: #fff;
-  font-family: Pretendard;
+  font-family: Pretendard-Medium;
   font-size: 12px;
-  font-weight: 500;
   cursor: pointer;
   display: flex;
   flex-direction: row;
