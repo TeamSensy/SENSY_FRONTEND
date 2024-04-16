@@ -17,9 +17,8 @@
 
 .AboutUs {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Regular;
   font-size: 16px;
-  font-weight: 400;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -27,9 +26,8 @@
 
 .ContactUs {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Regular;
   font-size: 16px;
-  font-weight: 400;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -37,9 +35,8 @@
 
 .TermsAndConditions {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Regular;
   font-size: 16px;
-  font-weight: 400;
   border: none;
   background-color: transparent;
   cursor: pointer;
