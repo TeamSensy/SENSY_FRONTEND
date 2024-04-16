@@ -1,7 +1,7 @@
 import ProfileImg from "src/assets/img/ProfileImage.svg";
 import EditProfileNameImg from "src/assets/img/EditProfileName.svg";
 import EditProfileInfoImg from "src/assets/img/EditProfileInfo.svg";
-import "src/components/Sidebar/style/Sidebar.style.css";
+import "src/components/Common/Sidebar/style.css";
 
 const Sidebar = () => {
   return (

@@ -1,4 +1,4 @@
-import { ReviewsDummy } from "src/Dummy/Main/MainDummy";
+import { ReviewsDummy } from "src/Dummy/ReviewsDummy";
 import Topbar from "src/components/Common/Topbar/Topbar";
 import Card from "src/components/Common/Card/Card";
 import Banner from "src/components/Common/Banner/Banner";
