@@ -22,7 +22,7 @@ const Sidebar = () => {
       <div className="UserInfoWrap">
         <div className="UserInfo">
           <div className="AccountWrap">
-            <p className="AccountTitle">Account</p>
+            <p className="AccountTitle">account</p>
             <span className="AccountOption">my account information</span>
             <span className="AccountOption">Change Password</span>
           </div>

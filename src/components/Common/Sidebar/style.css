@@ -43,9 +43,8 @@
 
 .ProfileName {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Bold;
   font-size: 20px;
-  font-weight: 700;
   margin-right: 5px;
 }
 
@@ -65,9 +64,8 @@
 
 .ProfileInfo {
   color: #2a6aff;
-  font-family: Pretendard;
+  font-family: Pretendard-Medium;
   font-size: 12px;
-  font-weight: 400;
   margin-right: 5px;
 }
 
@@ -103,17 +101,15 @@
 
 .AccountTitle {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-SemiBold;
   font-size: 16px;
-  font-weight: 500;
   margin-bottom: 5px;
 }
 
 .AccountOption {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Regular;
   font-size: 12px;
-  font-weight: 400;
   cursor: pointer;
   margin-top: 2px;
 }
@@ -127,17 +123,15 @@
 
 .PostManagementTitle {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-SemiBold;
   font-size: 16px;
-  font-weight: 500;
   margin-bottom: 5px;
 }
 
 .PostManagementOption {
   color: #000;
-  font-family: Pretendard;
+  font-family: Pretendard-Regular;
   font-size: 12px;
-  font-weight: 400;
   cursor: pointer;
   margin-top: 2px;
 }
