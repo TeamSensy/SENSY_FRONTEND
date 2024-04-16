@@ -1,4 +1,4 @@
-import "src/components/BottomBar/style/BottomBar.style.css";
+import "src/components/Common/BottomBar/style.css";
 
 const BottomBar = () => {
   return (
