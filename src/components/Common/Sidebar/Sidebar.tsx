@@ -1,7 +1,7 @@
 import ProfileImg from "src/assets/img/ProfileImage.svg";
 import EditProfileNameImg from "src/assets/img/EditProfileName.svg";
 import EditProfileInfoImg from "src/assets/img/EditProfileInfo.svg";
-import "src/components/Sidebar/style/Sidebar.style.css";
+import "src/components/Common/Sidebar/style.css";
 
 const Sidebar = () => {
   return (
@@ -22,7 +22,7 @@ const Sidebar = () => {
       <div className="UserInfoWrap">
         <div className="UserInfo">
           <div className="AccountWrap">
-            <p className="AccountTitle">Account</p>
+            <p className="AccountTitle">account</p>
             <span className="AccountOption">my account information</span>
             <span className="AccountOption">Change Password</span>
           </div>
