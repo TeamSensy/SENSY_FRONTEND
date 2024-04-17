@@ -22,23 +22,23 @@ const Card = () => {
       <SplideTrack>
         {CardDummy.map((data) => (
           <SplideSlide key={data.id}>
-            <div className="PopularCoursesCard">
+            <div className="CardWrap">
               <img
-                className="PopularCoursesCardImage"
+                className="CardImage"
                 src={CardDummyImage}
                 alt="카드 이미지"></img>
-              <div className="PopularCoursesCardInfo">
-                <div className="PopularCoursesCardTitleWrap">
-                  <span className="PopularCoursesCardTitle">{data.title}</span>
+              <div className="CardInfo">
+                <div className="CardTitleWrap">
+                  <span className="CardTitle">{data.title}</span>
                 </div>
-                <div className="PopularCoursesCardContentWrap">
-                  <p className="PopularCoursesCardContent">{data.content}</p>
-                  <div className="PopularCoursesCardLikeWrap">
+                <div className="CardContentWrap">
+                  <p className="CardContent">{data.content}</p>
+                  <div className="CardLikeWrap">
                     <img
-                      className="PopularCoursesCardLikeIcon"
+                      className="CardLikeIcon"
                       src={LikeIcon}
                       alt="좋아요 아이콘"></img>
-                    <p className="PopularCoursesCardLike">Like</p>
+                    <p className="CardLike">Like</p>
                   </div>
                 </div>
               </div>
