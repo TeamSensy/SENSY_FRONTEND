@@ -1,0 +1,124 @@
+.HeaderWrap {
+  width: 100vw;
+  height: 60px;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+}
+
+.Header {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.HeaderLogoWrap {
+  width: 50%;
+  height: 100%;
+}
+
+.HeaderLogo {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  width: 50px;
+  height: 50px;
+}
+
+.HeaderSensy {
+  color: #1c3879;
+  font-family: Pretendard-Black;
+  font-size: 24px;
+}
+
+.HeaderInfoWrap {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.HeaderInfo {
+  width: 95%;
+  height: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeaderSearch {
+  width: 250px;
+  height: 90%;
+  font-size: 12px;
+  font-family: Pretendard-Regular;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background: url(src/assets/img/Search_icon.svg) no-repeat 5px center;
+  background-size: 16px;
+  padding-left: 25px;
+}
+
+.HeaderHome {
+  color: #000;
+  font-family: Pretendard-Regular;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.HeaderLearn {
+  color: #000;
+  font-family: Pretendard-Regular;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.HeaderBtnWrap {
+  width: 130px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.HeaderLogIn {
+  color: #1c3879;
+  font-family: Pretendard-Medium;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #1c3879;
+  border-radius: 6px;
+  background-color: inherit;
+  padding: 10px;
+}
+
+.HeaderSignUp {
+  color: #fff;
+  font-family: Pretendard-Medium;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  background-color: #1c3879;
+  padding: 10px;
+}
