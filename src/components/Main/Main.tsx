@@ -3,9 +3,15 @@ import Topbar from "src/components/Common/Topbar/Topbar";
 import Card from "src/components/Common/Card/Card";
 import Banner from "src/components/Common/Banner/Banner";
 import BottomBar from "src/components/Common/BottomBar/BottomBar";
+import { ReviewsDummy } from "src/Dummy/ReviewsDummy";
+import Topbar from "src/components/Common/Topbar/Topbar";
+import Card from "src/components/Common/Card/Card";
+import Banner from "src/components/Common/Banner/Banner";
+import BottomBar from "src/components/Common/BottomBar/BottomBar";
 import MainImage from "src/assets/img/MainImage.svg";
 import ExampleProfile from "src/assets/img/ProfileImage.svg";
 import ExampleRate from "src/assets/img/Rate.svg";
+import "src/components/Main/style.css";
 import "src/components/Main/style.css";
 
 const Main = () => {
@@ -21,6 +27,9 @@ const Main = () => {
               <p className="PopularCoursesDescription">
                 Check out our best sellers
               </p>
+              <p className="PopularCoursesDescription">
+                Check out our best sellers
+              </p>
               <div className="PopularCoursesButtonWrap">
                 <div className="PopularCoursesButton">
                   <button className="AddToCartButton">Add to Cart</button>
@@ -29,6 +38,7 @@ const Main = () => {
               </div>
             </div>
             <div className="PopularCoursesBottom">
+              <Card />
               <Card />
             </div>
           </div>
@@ -47,6 +57,10 @@ const Main = () => {
                         src={ExampleProfile}
                         alt="프로필"
                       ></img>
+                      <img
+                        className="StudentReviewsCardProfile"
+                        src={ExampleProfile}
+                        alt="프로필"></img>
                       <p className="StudentReviewsCardName">{data.name}</p>
                     </div>
                     <div className="StudentReviewsCardInfoRight">
@@ -55,6 +69,10 @@ const Main = () => {
                         src={ExampleRate}
                         alt="별점"
                       ></img>
+                      <img
+                        className="StudentReviewsCardRate"
+                        src={ExampleRate}
+                        alt="별점"></img>
                     </div>
                   </div>
                   <div className="StudentReviewsCardContentWrap">

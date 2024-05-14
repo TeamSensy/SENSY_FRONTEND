@@ -1,8 +1,7 @@
-.img {
+.bgimg {
   position: absolute;
   left: 781px;
 }
-
 .logo {
   position: absolute;
   width: 181px;
@@ -23,127 +22,67 @@
   color: #1c3879;
 }
 .input-field {
-  display: flex;
-  /* flex-direction: column; */
-  /* align-items: flex-start; */
-  padding: 0px;
-  gap: 8px;
-  /* flex-direction: column; */
-  /* position: absolute; */
+  position: absolute;
   width: 311.1px;
-  height: 696px;
   left: 218px;
   top: 409px;
+  vertical-align: middle;
+  flex-direction: column;
 }
-.id {
-  box-sizing: border-box;
-  /* display: flex; */
-  /* flex-direction: row;
-  justify-content: center;
-  align-items: center; */
-  padding: 18px 256px 18px 18px;
-  gap: 8px;
-  width: 311px;
-  height: 52px;
-  border: 1px solid #d9d9d9;
-  border-radius: 10px;
-  /* flex: none; */
-  order: 0;
-  /* flex-grow: 0; */
-}
-.password {
-  box-sizing: border-box;
-  /* display: flex; */
-  /* flex-direction: row;
-  justify-content: center;
-  align-items: center; */
-  padding: 18px 212px 18px 20.5px;
-  gap: 10.5px;
-  width: 311px;
-  height: 52px;
-  border: 1px solid #d9d9d9;
-  border-radius: 10px;
-  /* flex: none; */
-  order: 1;
-  /* flex-grow: 0; */
-}
-.Verify {
-  box-sizing: border-box;
-  /* display: flex; */
-  /* flex-direction: row;
-  justify-content: center;
-  align-items: center; */
-  padding: 18px 174.2px 18px 20.5px;
-  gap: 11.3px;
-  width: 311px;
-  height: 52px;
-  border: 1px solid #d9d9d9;
-  border-radius: 10px;
-  /* flex: none; */
-  order: 2;
-  /* flex-grow: 0; */
-}
-.Birthday {
-  box-sizing: border-box;
-  /* display: flex; */
-  /* flex-direction: row;
-  justify-content: center;
-  align-items: center; */
-  padding: 18px 219px 18px 19px;
-  gap: 9px;
-  width: 311px;
-  height: 52px;
-  border: 1px solid #d9d9d9;
-  border-radius: 10px;
-  /* flex: none; */
-  order: 3;
-  /* flex-grow: 0; */
-}
-.Name {
-  box-sizing: border-box;
-  /* display: flex; */
-  /* flex-direction: row;
-  justify-content: center;
-  align-items: center; */
-  padding: 18px 236px 18px 18px;
-  gap: 8.1px;
-  width: 311.1px;
-  height: 52px;
-  border: 1px solid #d9d9d9;
-  border-radius: 10px;
-  /* flex: none; */
-  order: 4;
-  /* flex-grow: 0; */
-}
+.id,
+.password,
+.Verify,
+.Birthday,
+.Name,
 .Nationality {
   box-sizing: border-box;
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  padding: 18px 209px 18px 18px;
-  gap: 8.1px;
-  width: 311.1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 18px;
+  width: 311px;
   height: 52px;
   border: 1px solid #d9d9d9;
   border-radius: 10px;
-  /* flex: none; */
-  order: 5;
-  /* flex-grow: 0; */
+  flex: none;
+}
+.signup-button {
+  box-sizing: border-box;
+  margin-top: 15px;
+  width: 311px;
+  height: 50px;
+  background: #1c3879;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  flex: none;
+  order: 1;
+}
+.Login {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 9px;
+}
+.signUp {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 9px;
 }
 .profile {
-  box-sizing: border-box;
-  display: flex;
-  /* flex-direction: row;
-  justify-content: center;
-  align-items: center; */
-  padding: 18px 105px;
-  gap: 8.1px;
-  width: 310px;
-  height: 278px;
-  border: 1px solid #d9d9d9;
+  width: 150px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid rgb(77, 77, 77);
   border-radius: 10px;
-  /* flex: none; */
-  order: 6;
-  /* flex-grow: 0; */
+  cursor: pointer;
+  &::hover {
+    background: rgb(77, 77, 77);
+    color: #fff;
+  }
 }

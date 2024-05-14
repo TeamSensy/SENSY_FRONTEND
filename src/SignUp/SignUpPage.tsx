@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, Dispatch, SetStateAction } from "react";
+import React, { useRef, useState, ChangeEvent, Dispatch, SetStateAction } from "react";
 import "./SignUp.css";
 import iimmgg from "../assets/img/bgimg.svg";
 import logo from "../assets/img/circle logo 4.svg";
@@ -28,7 +28,7 @@ const SignUpPage: React.FC = () => {
 
   return (
     <div className="signup-page">
-      <img src={iimmgg} className="img" />
+      <img src={iimmgg} className="bgimg" />
       <div className="logo-group">
         <img src={logo} className="logo" />
         <h3 className="logoo"> SENSY </h3>

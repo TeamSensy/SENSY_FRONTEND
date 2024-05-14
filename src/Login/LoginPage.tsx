@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./Login.css";
 import logo from "../assets/img/circle logo 4.svg";
 import loginimg from "../assets/img/loginimg.svg";
 import pwimg from "../assets/img/pwimg.svg";
 import bgimg from "../assets/img/bgimg.svg";
+// import idimg from "../assets/img/idimg.svg";
 
 const LoginPage: React.FC = () => {
   const [id, setId] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [errorMessage, setErrorMessage] = useState<string>("");
-  const navigate = useNavigate();
+  // const history = useHistory();
 
   const handleLogin = () => {
-    const validId = /^[a-zA-Z0-9_]+$/.test(id);
+    // const validId = /^[a-zA-Z0-9_]+$/.test(id);
 
-    if (validId && id === "example" && password === "password") {
+    if (id === "example" && password === "password") {
       // 로그인 성공
       alert("로그인 성공!");
     } else {
@@ -33,7 +33,7 @@ const LoginPage: React.FC = () => {
   };
 
   const handleSignUp = () => {
-    navigate("./signup");
+    //회원가입 페이지로 이동...
   };
 
   return (
