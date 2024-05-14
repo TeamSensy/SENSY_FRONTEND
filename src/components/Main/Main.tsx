@@ -45,14 +45,16 @@ const Main = () => {
                       <img
                         className="StudentReviewsCardProfile"
                         src={ExampleProfile}
-                        alt="프로필"></img>
+                        alt="프로필"
+                      ></img>
                       <p className="StudentReviewsCardName">{data.name}</p>
                     </div>
                     <div className="StudentReviewsCardInfoRight">
                       <img
                         className="StudentReviewsCardRate"
                         src={ExampleRate}
-                        alt="별점"></img>
+                        alt="별점"
+                      ></img>
                     </div>
                   </div>
                   <div className="StudentReviewsCardContentWrap">
